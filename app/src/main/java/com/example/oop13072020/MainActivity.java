@@ -16,8 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Tạo 1 cá thể từ tập thể Sinhvien
-        Sinhvien sinhVienA = new Sinhvien();
-        sinhVienA.setTen("Nguyen Van A");
+        Sinhvien sinhVienA = new Sinhvien("Nguyen Van A" , 20 , "Quan 1");
         Log.d("BBB",sinhVienA.getTen());
     }
 }

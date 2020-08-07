@@ -8,12 +8,45 @@ public class Sinhvien {
 
 
     // Phương thức
-    public void setTen(String ten){
+//    public void setTen(String ten){
+//        if (!ten.isEmpty()){
+//           this.ten = ten;
+//        }
+//    }
+//    public String getTen(){
+//        return ten;
+//    }
+    // alt + insert
+    // constructor : Phương thức khởi tạo
+    public Sinhvien(String ten,int tuoi , String quequan){
+        this.ten = ten;
+        this.tuoi = tuoi;
+        this.quequan = quequan;
+    }
+
+    public String getTen() {
+        return ten;
+    }
+
+    public void setTen(String ten) {
         if (!ten.isEmpty()){
-           this.ten = ten;
+            this.ten = ten;
         }
     }
-    public String getTen(){
-        return ten;
+
+    public int getTuoi() {
+        return tuoi;
+    }
+
+    public void setTuoi(int tuoi) {
+        this.tuoi = tuoi;
+    }
+
+    public String getQuequan() {
+        return quequan;
+    }
+
+    public void setQuequan(String quequan) {
+        this.quequan = quequan;
     }
 }
