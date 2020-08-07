@@ -17,9 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Tạo 1 cá thể từ tập thể Sinhvien
         Sinhvien sinhVienA = new Sinhvien();
-        sinhVienA.ten = "Nguyen Van A";
-        sinhVienA.tuoi = 20;
-        sinhVienA.quequan = "Quan 1";
-        Log.d("BBB",sinhVienA.ten);
+        sinhVienA.setTen("Nguyen Van A");
+        Log.d("BBB",sinhVienA.getTen());
     }
 }
