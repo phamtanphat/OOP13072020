@@ -26,10 +26,16 @@ public class MainActivity extends AppCompatActivity {
 //
 //        dog.eat(Food.MEAT);
         Dog kiki = new Dog();
-        kiki.category = "Chó việt nam";
-        kiki.height = 50;
-        kiki.weight = 3;
+        kiki.setCategory("Chó việt nam");
+        kiki.setHeight(50);
+        kiki.setWeight(3);
         kiki.setSpeed(5);
         kiki.eat(Food.MEAT);
     }
+    // Override : ghi đè
+//        + Ngữ cảnh : Khi sử dụng kế thừa
+//        + Cách nhận biết
+//            - Có annotation @Override
+//            - Phương thức lop cha dinh nghia va lop con goi lai de thay doi
+    // OverLoad : nạp chồng
 }
