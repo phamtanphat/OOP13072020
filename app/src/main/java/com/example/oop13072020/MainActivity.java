@@ -16,7 +16,20 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Tạo 1 cá thể từ tập thể Sinhvien
-        Sinhvien sinhVienA = new Sinhvien("Nguyen Van A" , 20 , "Quan 1");
-        Log.d("BBB",sinhVienA.getTen());
+//        Sinhvien sinhVienA = new Sinhvien("Nguyen Van A" , 20 , "Quan 1");
+//        Log.d("BBB",sinhVienA.getTen());
+
+//        Animal dog = new Animal();
+//        dog.category = "Chó";
+//        dog.height = 50;
+//        dog.weight = 3;
+//
+//        dog.eat(Food.MEAT);
+        Dog kiki = new Dog();
+        kiki.category = "Chó việt nam";
+        kiki.height = 50;
+        kiki.weight = 3;
+        kiki.setSpeed(5);
+        kiki.eat(Food.MEAT);
     }
 }
