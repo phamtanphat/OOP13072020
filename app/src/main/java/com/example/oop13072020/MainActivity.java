@@ -25,11 +25,8 @@ public class MainActivity extends AppCompatActivity {
 //        dog.weight = 3;
 //
 //        dog.eat(Food.MEAT);
-        Dog kiki = new Dog();
-        kiki.setCategory("Chó việt nam");
-        kiki.setHeight(50);
-        kiki.setWeight(3);
-        kiki.setSpeed(5);
+        Dog kiki = new Dog("Chó việt nam",50,3,"5","Nâu");
+
         kiki.eat(Food.MEAT);
     }
     // Override : ghi đè

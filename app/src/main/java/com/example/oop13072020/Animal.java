@@ -7,6 +7,14 @@ public class Animal {
     private int height;
     private int weight;
 
+    // alt + insert  : generate code
+
+    public Animal(String category, int height, int weight) {
+        this.category = category;
+        this.height = height;
+        this.weight = weight;
+    }
+
     public void eat(Food food){
         switch (food){
             case MEAT:
@@ -18,11 +26,11 @@ public class Animal {
         }
     }
 
-    public String getCategory() {
+    public final String getCategory() {
         return category;
     }
 
-    public void setCategory(String category) {
+    public final void setCategory(String category) {
         this.category = category;
     }
 
