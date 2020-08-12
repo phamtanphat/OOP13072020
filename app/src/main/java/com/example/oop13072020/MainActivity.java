@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,9 +26,10 @@ public class MainActivity extends AppCompatActivity {
 //        dog.weight = 3;
 //
 //        dog.eat(Food.MEAT);
-        Dog kiki = new Dog("Chó việt nam",50,3,"5","Nâu");
-
-        kiki.eat(Food.MEAT);
+//        Dog kiki = new Dog("Chó việt nam",50,3,"5","Nâu");
+//
+//        kiki.eat(Food.MEAT);
+        showToast(R.id.bottom);
     }
     // Override : ghi đè
 //        + Ngữ cảnh : Khi sử dụng kế thừa
@@ -35,4 +37,10 @@ public class MainActivity extends AppCompatActivity {
 //            - Có annotation @Override
 //            - Phương thức lop cha dinh nghia va lop con goi lai de thay doi
     // OverLoad : nạp chồng
+    public void showToast(String message){
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+    }
+    public void showToast(Integer resId){
+        Toast.makeText(this, resId.toString(), Toast.LENGTH_SHORT).show();
+    }
 }
